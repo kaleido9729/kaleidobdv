@@ -17,7 +17,8 @@ export default defineConfig({
     proxy: {
       "/api": {
         target: "https://192.9.102.156:8443/jiermw-webapi",
-        changeOrigin: true
+        changeOrigin: true,
+        secure: false
       }
     }
   },
