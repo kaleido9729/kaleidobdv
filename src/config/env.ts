@@ -2,7 +2,7 @@
 export const API_CONFIG = {
   // 测试环境
   test: {
-    baseURL: 'http://localhost:8443',
+    baseURL: '/api',
     // baseURL: 'https://10.10.101.184:8443/jiermw-webapi',
     // baseURL: 'http://10.31.7.112:8443/jiermw-webapi',
     // baseURL: 'http://10.31.7.126:8080/jiermw_webapi_node_war_exploded',
