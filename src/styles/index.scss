@@ -1,0 +1,30 @@
+/* src/styles/index.scss */
+:root {
+  --bg: #0b1220;
+  --card: #101a33;
+  --text: #e6f0ff;
+  --muted: #8aa0c8;
+  --accent: #3b82f6;
+
+  // 添加状态颜色变量
+  --status_running: #00ff2a;  /* 运行状态 - 绿色 */
+  --status-alert: #ff2d55;    /* 告警状态 - 红色 */
+  --status-standby: #3498db;  /* 待机状态 - 蓝色 */
+  --status-offline: #95a5a6;  /* 离线状态 - 灰色 */
+
+}
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(1000px 600px at 80% 0%, #0f1b34, var(--bg));
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25) inset, 0 2px 10px rgba(0,0,0,.3);
+}
